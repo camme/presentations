@@ -3,7 +3,7 @@
 var zonar = require('zonar');
 var clc = require('cli-color');
 
-var z = zonar.create({ net : 'cammes', name: 'service-monitor'});
+var z = zonar.create({ net : 'foocafe', name: 'monitor'});
 
 var list = {};
 z.listen(function(){
@@ -27,11 +27,11 @@ function render(list) {
 
     var counter = 0;
     for(var s in list) {
-        console.log("  %s. %s", ++counter, s);
+        console.log("%s. %s", ++counter, s);
     }
 
     if (counter == 0) {
-        console.log("  No services found");
+        console.log("No services found");
     }
     console.log("");
 
