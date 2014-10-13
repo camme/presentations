@@ -4,7 +4,7 @@ var elks = require('sms-46elks');
 
 // configs
 var port = 6010;
-var address = "tcp://0.0.0.0:" + port;
+var address = "tcp://31.192.227.45:" + port;
 
 // zmq socket
 var socket = zmq.socket('pub');
